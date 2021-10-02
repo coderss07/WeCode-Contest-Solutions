@@ -1,0 +1,2 @@
+# WeCode-Contest-Solutions
+Solutions
