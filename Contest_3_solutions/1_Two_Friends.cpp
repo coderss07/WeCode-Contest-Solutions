@@ -28,10 +28,12 @@ int find(int x) {
 	if(f[x] == 0) return x;
 	return f[x] = find(f[x]);
 }
+
 int ffind(int x) {
 	if(ff[x] == 0) return x;
 	return ff[x] = ffind(ff[x]);
 }
+
 void erase(int i) {
 	nex[last[i]] = nex[i];
 	last[nex[i]] = last[i];

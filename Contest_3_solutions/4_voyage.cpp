@@ -25,15 +25,17 @@ const ll INF = 1e18 + 10;
 int a[N], b[N], n, c;
 
 int check(ll x) {
-  ll s = 0;
-  rep(i, 0, n) {
-    double cl = 1 + 1.0 * x * a[i] / b[i];
-    if (cl > c + 1) return 1;
-    s += 1 + x * a[i] / b[i];
-    if (s > c) return 1;
-  }
-  if (s == c) return 0;
-  return -1;
+	ll s = 0;
+	rep(i, 0, n) {
+		double cl = 1 + 1.0 * x * a[i] / b[i];
+		if (cl > c + 1)
+			return 1;
+		s += 1 + x * a[i] / b[i];
+		if (s > c)
+			return 1;
+  	}
+	if (s == c) return 0;
+	return -1;
 }
 
 int main() {
